@@ -37,5 +37,4 @@ class BankAccount
     @balance += amount
   end
 
-  binding.pry
 end
