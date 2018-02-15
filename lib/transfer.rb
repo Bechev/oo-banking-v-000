@@ -14,7 +14,7 @@ attr_accessor :sender, :receiver, :status, :amount
   end
 
   def execute_transaction
-    if self.valid?
+    if @sender.valid?
       @sender.balance -= amount
       @receiver.balance += amount
       @status = "complete"
